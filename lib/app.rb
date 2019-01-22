@@ -1,15 +1,18 @@
 require 'bundler'
-require 'rubygems'
+require 'dotenv'
+require 'rubygem'
 require 'nokogiri'
-require 'open-uri'
+require 'json'
+require 'csv'
 require 'google_drive'
-require 'app/fichier_1'
-require 'views/fichier_2'
+require 'apps/scrapper'
+require 'views/index'
+require 'views/done'
 
 bundler.require
 
 $:.unshift File.expand_path("./../lib", __FILE__)
 
-Scrapper_mail.new
+Scrapper_mail.new.perform
 
 

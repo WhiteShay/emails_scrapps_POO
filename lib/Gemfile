@@ -1,7 +1,10 @@
  source "https://rubygems.org"
  ruby '2.5.1'
-gem 'bundler'
-gem 'rubygems'
+
 gem 'nokogiri'
-gem 'open-uri'
+gem 'google_drive'
+gem 'bundler'
+gem 'dotenv'
+gem 'json'
+gem 'csv'
 gem 'google_drive'
